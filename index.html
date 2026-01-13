@@ -72,7 +72,7 @@
 
     .intro-section {
         background: #161b22;
-        padding: 40px 0;
+        padding: 30px 20px;
         margin-bottom: 0;
         border-bottom: 1px solid #30363d;
     }
@@ -122,20 +122,22 @@
         background: #1c2128;
         border: 1px solid #f85149;
         border-radius: 6px;
-        padding: 20px;
-        margin-bottom: 30px;
+        padding: 16px;
+        margin-bottom: 20px;
     }
 
     .info-box h3 {
         color: #f85149;
-        margin-bottom: 12px;
-        font-size: 1.1em;
+        margin-bottom: 10px;
+        font-size: 1em;
         font-weight: 600;
     }
 
     .info-box p {
         color: #c9d1d9;
         margin-bottom: 8px;
+        font-size: 0.9em;
+        line-height: 1.5;
     }
 
     .info-box strong {
@@ -395,39 +397,103 @@
 
     @media (max-width: 768px) {
         h1 {
-            font-size: 1.5em;
+            font-size: 1.4em;
+        }
+
+        .logo-icon {
+            font-size: 1.6em;
         }
 
         .header-content {
             flex-direction: column;
             align-items: flex-start;
+            gap: 10px;
+        }
+
+        .intro-section {
+            padding: 20px 15px;
         }
 
         .intro-content h2 {
-            font-size: 1.3em;
+            font-size: 1.2em;
+        }
+
+        .intro-content p {
+            font-size: 0.95em;
+        }
+
+        .container {
+            padding: 0 15px;
         }
 
         .category {
-            padding: 20px 16px;
+            padding: 20px 15px;
         }
 
         .category h2 {
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
 
         .tab-button {
             padding: 14px 16px;
             font-size: 0.9em;
         }
+
+        .info-box {
+            padding: 14px;
+            margin-bottom: 15px;
+        }
+
+        .info-box h3 {
+            font-size: 0.95em;
+        }
+
+        .info-box p {
+            font-size: 0.85em;
+        }
+
+        .search-container {
+            margin: 20px 0;
+        }
+
+        .command-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .command-actions {
+            width: 100%;
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-icon {
+            flex: 1;
+            text-align: center;
+        }
     }
 
     @media (max-width: 480px) {
         h1 {
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
 
         .logo-icon {
-            font-size: 1.5em;
+            font-size: 1.4em;
+        }
+
+        .platform-tag {
+            font-size: 0.75em;
+            padding: 3px 8px;
+        }
+
+        .intro-content h2 {
+            font-size: 1.1em;
+        }
+
+        .intro-content p {
+            font-size: 0.9em;
         }
 
         #searchInput {
@@ -438,6 +504,25 @@
         .tab-button {
             padding: 12px 14px;
             font-size: 0.85em;
+        }
+
+        .category h2 {
+            font-size: 1.1em;
+        }
+
+        .command-code {
+            font-size: 0.85em;
+            padding: 5px 8px;
+            word-break: break-all;
+        }
+
+        .command-description {
+            font-size: 0.9em;
+        }
+
+        .btn-icon {
+            font-size: 0.8em;
+            padding: 6px 8px;
         }
     }
 
