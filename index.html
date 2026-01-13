@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fallout 4 Commands - Complete Console Command List</title>
+    <meta name="description" content="Complete list of Fallout 4 console commands, cheats, and codes. Find player commands, item codes, NPC commands, and more.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        background: #0d1117;
+        color: #c9d1d9;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    header {
+        background: #161b22;
+        border-bottom: 1px solid #30363d;
+        padding: 20px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .logo-icon {
+        font-size: 2em;
+    }
+
+    h1 {
+        color: #58a6ff;
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+
+    .platform-tag {
+        background: #1f6feb;
+        color: #fff;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 0.85em;
+        font-weight: 500;
+    }
+
+    .intro-section {
+        background: #161b22;
+        padding: 40px 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid #30363d;
+    }
+
+    .intro-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .intro-content h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        color: #c9d1d9;
+    }
+
+    .intro-content p {
+        color: #8b949e;
+        font-size: 1.05em;
+        margin-bottom: 10px;
+    }
+
+    .search-container {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    #searchInput {
+        width: 100%;
+        max-width: 600px;
+        padding: 14px 20px;
+        font-size: 16px;
+        border: 1px solid #30363d;
+        border-radius: 6px;
+        background: #0d1117;
+        color: #c9d1d9;
+        outline: none;
+        transition: all 0.2s;
+    }
+
+    #searchInput:focus {
+        border-color: #58a6ff;
+        box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.15);
+    }
+
+    .info-box {
+        background: #1c2128;
+        border: 1px solid #f85149;
+        border-radius: 6px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .info-box h3 {
+        color: #f85149;
+        margin-bottom: 12px;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    .info-box p {
+        color: #c9d1d9;
+        margin-bottom: 8px;
+    }
+
+    .info-box strong {
+        font-weight: 600;
+        color: #58a6ff;
+    }
+
+    /* Tab Navigation */
+    .tab-navigation {
+        background: #161b22;
+        border-bottom: 1px solid #30363d;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .tab-container {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        gap: 0;
+    }
+
+    .tab-button {
+        background: transparent;
+        border: none;
+        color: #8b949e;
+        padding: 16px 20px;
+        cursor: pointer;
+        font-size: 0.95em;
+        font-weight: 500;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .tab-button:hover {
+        color: #c9d1d9;
+        border-bottom-color: #30363d;
+    }
+
+    .tab-button.active {
+        color: #58a6ff;
+        border-bottom-color: #58a6ff;
+    }
+
+    .category {
+        background: #161b22;
+        border-radius: 6px;
+        padding: 30px;
+        margin-bottom: 25px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        border: 1px solid #30363d;
+    }
+
+    .category h2 {
+        color: #58a6ff;
+        border-bottom: 2px solid #30363d;
+        padding-bottom: 12px;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .command-grid {
+        display: grid;
+        gap: 12px;
+    }
+
+    .command-item {
+        background: #0d1117;
+        padding: 16px;
+        border-radius: 6px;
+        border: 1px solid #30363d;
+        transition: all 0.2s;
+        position: relative;
+    }
+
+    .command-item:hover {
+        border-color: #58a6ff;
+        box-shadow: 0 2px 8px rgba(88, 166, 255, 0.15);
+        transform: translateX(2px);
+    }
+
+    .command-item.favorited {
+        border-color: #f0883e;
+        background: #1c1510;
+    }
+
+    .command-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 8px;
+    }
+
+    .command-actions {
+        display: flex;
+        gap: 6px;
+    }
+
+    .btn-icon {
+        background: #21262d;
+        border: 1px solid #30363d;
+        color: #8b949e;
+        padding: 6px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.85em;
+        transition: all 0.2s;
+        white-space: nowrap;
+    }
+
+    .btn-icon:hover {
+        background: #30363d;
+        border-color: #58a6ff;
+        color: #58a6ff;
+    }
+
+    .btn-favorite {
+        padding: 6px 8px;
+    }
+
+    .btn-favorite.favorited {
+        background: #f0883e;
+        border-color: #f0883e;
+        color: #fff;
+    }
+
+    .btn-favorite.favorited:hover {
+        background: #e07c2e;
+    }
+
+    .copy-feedback {
+        position: absolute;
+        top: -30px;
+        right: 10px;
+        background: #238636;
+        color: #fff;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 0.85em;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+
+    .copy-feedback.show {
+        opacity: 1;
+    }
+
+    #favoritesSection {
+        background: #161b22;
+        border-radius: 6px;
+        padding: 30px;
+        margin-bottom: 25px;
+        border: 1px solid #30363d;
+    }
+
+    #favoritesSection h2 {
+        color: #f0883e;
+        border-bottom: 2px solid #30363d;
+        padding-bottom: 12px;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 60px 20px;
+        color: #8b949e;
+    }
+
+    .empty-state-icon {
+        font-size: 4em;
+        margin-bottom: 15px;
+        opacity: 0.3;
+    }
+
+    .empty-state p {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+
+    .empty-state small {
+        font-size: 0.9em;
+        color: #6e7681;
+    }
+
+    .command-code {
+        font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        color: #ff7b72;
+        background: #1c2128;
+        padding: 6px 10px;
+        border-radius: 4px;
+        font-size: 0.95em;
+        font-weight: 600;
+        margin-bottom: 8px;
+        display: inline-block;
+        border: 1px solid #30363d;
+    }
+
+    .command-description {
+        color: #8b949e;
+        font-size: 0.95em;
+        line-height: 1.5;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    footer {
+        background: #161b22;
+        text-align: center;
+        padding: 40px 20px;
+        color: #8b949e;
+        border-top: 1px solid #30363d;
+        margin-top: 50px;
+    }
+
+    footer p {
+        margin: 8px 0;
+    }
+
+    .ad-placeholder {
+        background: #0d1117;
+        border: 2px dashed #30363d;
+        padding: 40px;
+        text-align: center;
+        margin: 30px 0;
+        border-radius: 6px;
+        color: #8b949e;
+        font-size: 0.9em;
+    }
+
+    .note {
+        background: #1c2128;
+        border-left: 4px solid #58a6ff;
+        padding: 12px 16px;
+        margin-top: 15px;
+        border-radius: 4px;
+        font-size: 0.9em;
+        color: #79c0ff;
+    }
+
+    .note strong {
+        font-weight: 600;
+        color: #58a6ff;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 1.5em;
+        }
+
+        .header-content {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .intro-content h2 {
+            font-size: 1.3em;
+        }
+
+        .category {
+            padding: 20px 16px;
+        }
+
+        .category h2 {
+            font-size: 1.3em;
+        }
+
+        .tab-button {
+            padding: 14px 16px;
+            font-size: 0.9em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.3em;
+        }
+
+        .logo-icon {
+            font-size: 1.5em;
+        }
+
+        #searchInput {
+            font-size: 14px;
+            padding: 12px 16px;
+        }
+
+        .tab-button {
+            padding: 12px 14px;
+            font-size: 0.85em;
+        }
+    }
+
+    /* Scrollbar styling for dark mode */
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #0d1117;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #30363d;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #484f58;
+    }
+</style>
+```
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">🎮</span>
+                <h1>Fallout 4 Commands</h1>
+            </div>
+            <span class="platform-tag">PC Console Commands</span>
+        </div>
+    </header>
+
+```
+<div class="intro-section">
+    <div class="intro-content">
+        <h2>Complete Console Command Reference</h2>
+        <p>Find every Fallout 4 console command in one place. Use the search below to quickly find what you need.</p>
+    </div>
+</div>
+
+<nav class="tab-navigation">
+    <div class="tab-container">
+        <button class="tab-button active" data-target="all">All Commands</button>
+        <button class="tab-button" data-target="favorites">⭐ Favorites</button>
+        <button class="tab-button" data-target="player">Player</button>
+        <button class="tab-button" data-target="items">Items</button>
+        <button class="tab-button" data-target="perks">Perks</button>
+        <button class="tab-button" data-target="building">Building</button>
+        <button class="tab-button" data-target="world">World</button>
+        <button class="tab-button" data-target="npc">NPCs</button>
+        <button class="tab-button" data-target="camera">Camera</button>
+        <button class="tab-button" data-target="settings">Settings</button>
+        <button class="tab-button" data-target="advanced">Advanced</button>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="info-box">
+        <h3>How to Open the Console</h3>
+        <p><strong>PC:</strong> Press the <strong>~ (tilde)</strong> key or <strong>` (backtick)</strong> key (usually located above TAB)</p>
+        <p style="margin-top: 8px;"><strong>Important:</strong> Using console commands will disable achievements. Always save your game first!</p>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search commands (e.g., god mode, teleport, add items)">
+    </div>
+
+    <!-- Ad Placeholder -->
+    <div class="ad-placeholder">
+        Advertisement Space - 728x90 Leaderboard
+    </div>
+
+    <!-- Favorites Section -->
+    <div id="favoritesSection" class="hidden">
+        <h2>⭐ Your Favorites</h2>
+        <div id="favoritesGrid" class="command-grid">
+            <div class="empty-state">
+                <div class="empty-state-icon">⭐</div>
+                <p>No favorites yet</p>
+                <small>Click the star icon on any command to add it to your favorites</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="category" id="player" data-category="player">
+        <h2>Player Commands</h2>
+        <div class="command-grid">
+            <div class="command-item" data-command="tgm">
+                <div class="command-header">
+                    <span class="command-code">tgm</span>
+                    <div class="command-actions">
+                        <button class="btn-icon btn-copy" title="Copy command">📋 Copy</button>
+                        <button class="btn-icon btn-favorite" title="Add to favorites">☆</button>
+                    </div>
+                </div>
+                <p class="command-description">Toggle God Mode - Infinite health, ammo, and AP. No carry weight limit.</p>
+            </div>
+            <div class="command-item" data-command="tcl">
+                <div class="command-header">
+                    <span class="command-code">tcl</span>
+                    <div class="command-actions">
+                        <button class="btn-icon btn-copy" title="Copy command">📋 Copy</button>
+                        <button class="btn-icon btn-favorite" title="Add to favorites">☆</button>
+                    </div>
+                </div>
+                <p class="command-description">Toggle No Clip - Walk through walls and fly.</p>
+            </div>
+            <div class="command-item" data-command="tim">
+                <div class="command-header">
+                    <span class="command-code">tim</span>
+                    <div class="command-actions">
+                        <button class="btn-icon btn-copy" title="Copy command">📋 Copy</button>
+                        <button class="btn-icon btn-favorite" title="Add to favorites">☆</button>
+                    </div>
+                </div>
+                <p class="command-description">Toggle Immortal Mode - You can take damage but won't die.</p>
+            </div>
+            <div class="command-item" data-command="killall">
+                <div class="command-header">
+                    <span class="command-code">killall</span>
+                    <div class="command-actions">
+                        <button class="btn-icon btn-copy" title="Copy command">📋 Copy</button>
+                        <button class="btn-icon btn-favorite" title="Add to favorites">☆</button>
+                    </div>
+                </div>
+                <p class="command-description">Kill all NPCs and creatures in the area.</p>
+            </div>
+            <div class="command-item" data-command="kill">
+                <div class="command-header">
+                    <span class="command-code">kill</span>
+                    <div class="command-actions">
+                        <button class="btn-icon btn-copy" title="Copy command">📋 Copy</button>
+                        <button class="btn-icon btn-favorite" title="Add to favorites">☆</button>
+                    </div>
+                </div>
+                <p class="command-description">Kill targeted NPC or creature (click on target first).</p>
+            </div>
+            <div class="command-item" data-command="resurrect">
+                <div class="command-header">
+                    <span class="command-code">resurrect</span>
+                    <div class="command-actions">
+                        <button class="btn-icon btn-copy" title="Copy command">📋 Copy</button>
+                        <button class="btn-icon btn-favorite" title="Add to favorites">☆</button>
+                    </div>
+                </div>
+                <p class="command-description">Resurrect targeted dead NPC (click on corpse first).</p>
+            </div>
+            <div class="command-item" data-command="player.setlevel [number]">
+                <div class="command-header">
+                    <span class="command-code">player.setlevel [number]</span>
+                    <div class="command-actions">
+                        <button class="btn-icon btn-copy" title="Copy command">📋 Copy</button>
+                        <button class="btn-icon btn-favorite" title="Add to favorites">☆</button>
+                    </div>
+                </div>
+                <p class="command-description">Set your character level to specified number (1-65535).</p>
+            </div>
+            <div class="command-item" data-command="player.setav speedmult [number]">
+                <div class="command-header">
+                    <span class="command-code">player.setav speedmult [number]</span>
+                    <div class="command-actions">
+                        <button class="btn-icon btn-copy" title="Copy command">📋 Copy</button>
+                        <button class="btn-icon btn-favorite" title="Add to favorites">☆</button>
+                    </div>
+                </div>
+                <p class="command-description">Set movement speed multiplier (default is 100).</p>
+            </div>
+            <div class="command-item" data-command="setgs fJumpHeightMin [number]">
+                <div class="command-header">
+                    <span class="command-code">setgs fJumpHeightMin [number]</span>
+                    <div class="command-actions">
+                        <button class="btn-icon btn-copy" title="Copy command">📋 Copy</button>
+                        <button class="btn-icon btn-favorite" title="Add to favorites">☆</button>
+                    </div>
+                </div>
+                <p class="command-description">Set jump height (default is 76).</p>
+            </div>
+            <div class="command-item" data-command="player.modav carryweight [number]">
+                <div class="command-header">
+                    <span class="command-code">player.modav carryweight [number]</span>
+                    <div class="command-actions">
+                        <button class="btn-icon btn-copy" title="Copy command">📋 Copy</button>
+                        <button class="btn-icon btn-favorite" title="Add to favorites">☆</button>
+                    </div>
+                </div>
+                <p class="command-description">Add to your carry weight capacity.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category" id="items" data-category="items">
+        <h2>Items & Inventory</h2>
+        <div class="command-grid">
+            <div class="command-item">
+                <span class="command-code">player.additem 0000000f [amount]</span>
+                <p class="command-description">Add bottle caps (money). Example: player.additem 0000000f 10000</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">player.additem 0000000a [amount]</span>
+                <p class="command-description">Add bobby pins.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">player.additem [item ID] [amount]</span>
+                <p class="command-description">Add any item using its ID code.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">player.removeitem [item ID] [amount]</span>
+                <p class="command-description">Remove items from inventory.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">player.showinventory</span>
+                <p class="command-description">Display all items in your inventory with their IDs.</p>
+            </div>
+        </div>
+        <div class="note">
+            <strong>Popular Item IDs:</strong> Stimpak: 00023736 | RadAway: 00023742 | Fusion Core: 00075fe4 | Nuka Cola: 0004835d
+        </div>
+    </div>
+
+    <div class="category" id="perks" data-category="perks">
+        <h2>Perks & Skills</h2>
+        <div class="command-grid">
+            <div class="command-item">
+                <span class="command-code">player.addperk [perk ID]</span>
+                <p class="command-description">Add a perk to your character.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">player.removeperk [perk ID]</span>
+                <p class="command-description">Remove a perk from your character.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">player.setav [skill] [number]</span>
+                <p class="command-description">Set S.P.E.C.I.A.L. stats. Skills: Strength, Perception, Endurance, Charisma, Intelligence, Agility, Luck</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">player.modav [skill] [number]</span>
+                <p class="command-description">Modify S.P.E.C.I.A.L. stats by adding to current value.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ad Placeholder -->
+    <div class="ad-placeholder">
+        Advertisement Space - 300x250 Rectangle
+    </div>
+
+    <div class="category" id="building" data-category="building">
+        <h2>Building & Crafting</h2>
+        <div class="command-grid">
+            <div class="command-item">
+                <span class="command-code">player.additem [component ID] [amount]</span>
+                <p class="command-description">Add crafting materials and components.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">player.placeatme [object ID]</span>
+                <p class="command-description">Spawn an object or NPC at your location.</p>
+            </div>
+        </div>
+        <div class="note">
+            <strong>Common Components:</strong> Steel: 000731a3 | Wood: 000731a4 | Adhesive: 001bf72d | Aluminum: 0006907a | Copper: 0006907b
+        </div>
+    </div>
+
+    <div class="category" id="world" data-category="world">
+        <h2>World & Environment</h2>
+        <div class="command-grid">
+            <div class="command-item">
+                <span class="command-code">tmm 1</span>
+                <p class="command-description">Reveal all map markers (locations).</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">coc [location]</span>
+                <p class="command-description">Teleport to a location. Example: coc qasmoke (test room with all items)</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">cow [location] [cell]</span>
+                <p class="command-description">Center on world - teleport to outdoor location.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">fw [weather ID]</span>
+                <p class="command-description">Force weather change.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">set timescale to [number]</span>
+                <p class="command-description">Change game time speed (default is 20).</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category" id="npc" data-category="npc">
+        <h2>NPC & Companion Commands</h2>
+        <div class="command-grid">
+            <div class="command-item">
+                <span class="command-code">tai</span>
+                <p class="command-description">Toggle AI - Freeze/unfreeze all NPCs.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">tcai</span>
+                <p class="command-description">Toggle Combat AI - NPCs won't fight.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">setessential [base ID] 1</span>
+                <p class="command-description">Make NPC essential (cannot die). Use 0 to reverse.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">recycleactor</span>
+                <p class="command-description">Reset targeted NPC to default state.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">moveto player</span>
+                <p class="command-description">Move targeted NPC to player location.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ad Placeholder -->
+    <div class="ad-placeholder">
+        Advertisement Space - 728x90 Leaderboard
+    </div>
+
+    <div class="category" id="camera" data-category="camera">
+        <h2>Camera & Graphics</h2>
+        <div class="command-grid">
+            <div class="command-item">
+                <span class="command-code">tm</span>
+                <p class="command-description">Toggle Menus - Hide/show all UI elements.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">tfc</span>
+                <p class="command-description">Toggle Free Camera - Great for screenshots.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">tfc 1</span>
+                <p class="command-description">Free camera with game paused.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">fov [number]</span>
+                <p class="command-description">Change field of view (default is 70-80).</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">sucsm [number]</span>
+                <p class="command-description">Set free camera movement speed (default is 1).</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category" id="settings" data-category="settings">
+        <h2>Game Settings</h2>
+        <div class="command-grid">
+            <div class="command-item">
+                <span class="command-code">tdetect</span>
+                <p class="command-description">Toggle Detection - NPCs can't detect you (stealth).</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">player.sexchange</span>
+                <p class="command-description">Change character gender.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">showlooksmenu player 1</span>
+                <p class="command-description">Reopen character customization menu.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">caqs</span>
+                <p class="command-description">Complete all quest stages (can break quests!).</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">coc sanctuaryext</span>
+                <p class="command-description">Return to Sanctuary Hills.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">save [name]</span>
+                <p class="command-description">Create a save file with custom name.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">load [name]</span>
+                <p class="command-description">Load a save file.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">qqq</span>
+                <p class="command-description">Quit game immediately.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ad Placeholder -->
+    <div class="ad-placeholder">
+        Advertisement Space - 300x250 Rectangle
+    </div>
+
+    <div class="category" id="advanced" data-category="advanced">
+        <h2>Advanced Commands</h2>
+        <div class="command-grid">
+            <div class="command-item">
+                <span class="command-code">getav [variable]</span>
+                <p class="command-description">Get current value of a variable.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">setav [variable] [number]</span>
+                <p class="command-description">Set actor value.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">bat [filename]</span>
+                <p class="command-description">Execute a batch file of commands.</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">help [text] [filter]</span>
+                <p class="command-description">Search for item IDs. Example: help stimpak 0</p>
+            </div>
+            <div class="command-item">
+                <span class="command-code">scrapall</span>
+                <p class="command-description">Scrap all items in workshop (use carefully!).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ad Placeholders -->
+    <div class="ad-placeholder">
+        Advertisement Space - 728x90 Leaderboard
+    </div>
+
+    <div class="ad-placeholder">
+        Advertisement Space - 300x250 Rectangle
+    </div>
+
+    <div class="ad-placeholder">
+        Advertisement Space - 728x90 Leaderboard
+    </div>
+
+    <footer>
+        <p><strong>Fallout4Commands.com</strong> - Your complete resource for Fallout 4 console commands</p>
+        <p style="margin-top: 15px;">This is an independent fan resource and is not affiliated with Bethesda Softworks or ZeniMax Media.</p>
+        <p style="margin-top: 8px; font-size: 0.9em; color: #999;">Fallout 4 © Bethesda Softworks. All trademarks are property of their respective owners.</p>
+    </footer>
+</div>
+
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const categories = document.querySelectorAll('.category');
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const favoritesSection = document.getElementById('favoritesSection');
+    const favoritesGrid = document.getElementById('favoritesGrid');
+    
+    // Load favorites from localStorage
+    let favorites = JSON.parse(localStorage.getItem('fallout4Favorites') || '[]');
+
+    // Add copy and favorite buttons to all command items
+    function initializeCommands() {
+        const allCommandItems = document.querySelectorAll('.command-item');
+        allCommandItems.forEach((item, index) => {
+            const codeElement = item.querySelector('.command-code');
+            const command = codeElement.textContent.trim();
+            
+            // Set data-command if not exists
+            if (!item.hasAttribute('data-command')) {
+                item.setAttribute('data-command', command);
+            }
+            
+            // Check if already has buttons
+            if (item.querySelector('.command-actions')) {
+                return;
+            }
+            
+            // Create header wrapper
+            const header = document.createElement('div');
+            header.className = 'command-header';
+            
+            // Create actions container
+            const actions = document.createElement('div');
+            actions.className = 'command-actions';
+            
+            // Copy button
+            const copyBtn = document.createElement('button');
+            copyBtn.className = 'btn-icon btn-copy';
+            copyBtn.title = 'Copy command';
+            copyBtn.innerHTML = '📋 Copy';
+            copyBtn.onclick = () => copyCommand(command, copyBtn);
+            
+            // Favorite button
+            const favBtn = document.createElement('button');
+            favBtn.className = 'btn-icon btn-favorite';
+            favBtn.title = 'Add to favorites';
+            favBtn.innerHTML = favorites.includes(command) ? '★' : '☆';
+            if (favorites.includes(command)) {
+                favBtn.classList.add('favorited');
+                item.classList.add('favorited');
+            }
+            favBtn.onclick = () => toggleFavorite(command, item, favBtn);
+            
+            actions.appendChild(copyBtn);
+            actions.appendChild(favBtn);
+            
+            // Move code element into header
+            item.insertBefore(header, item.firstChild);
+            header.appendChild(codeElement);
+            header.appendChild(actions);
+        });
+    }
+
+    // Copy command to clipboard
+    function copyCommand(command, button) {
+        navigator.clipboard.writeText(command).then(() => {
+            const originalText = button.innerHTML;
+            button.innerHTML = '✓ Copied!';
+            button.style.background = '#238636';
+            button.style.borderColor = '#238636';
+            button.style.color = '#fff';
+            
+            setTimeout(() => {
+                button.innerHTML = originalText;
+                button.style.background = '';
+                button.style.borderColor = '';
+                button.style.color = '';
+            }, 1500);
+        });
+    }
+
+    // Toggle favorite
+    function toggleFavorite(command, item, button) {
+        const index = favorites.indexOf(command);
+        if (index > -1) {
+            favorites.splice(index, 1);
+            button.innerHTML = '☆';
+            button.classList.remove('favorited');
+            item.classList.remove('favorited');
+        } else {
+            favorites.push(command);
+            button.innerHTML = '★';
+            button.classList.add('favorited');
+            item.classList.add('favorited');
+        }
+        localStorage.setItem('fallout4Favorites', JSON.stringify(favorites));
+        updateFavoritesView();
+    }
+
+    // Update favorites view
+    function updateFavoritesView() {
+        if (favorites.length === 0) {
+            favoritesGrid.innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-state-icon">⭐</div>
+                    <p>No favorites yet</p>
+                    <small>Click the star icon on any command to add it to your favorites</small>
+                </div>
+            `;
+            return;
+        }
+
+        favoritesGrid.innerHTML = '';
+        favorites.forEach(command => {
+            // Find the original command item
+            const originalItem = document.querySelector(`.command-item[data-command="${CSS.escape(command)}"]`);
+            if (originalItem) {
+                const clone = originalItem.cloneNode(true);
+                // Re-attach event listeners to cloned buttons
+                const copyBtn = clone.querySelector('.btn-copy');
+                const favBtn = clone.querySelector('.btn-favorite');
+                copyBtn.onclick = () => copyCommand(command, copyBtn);
+                favBtn.onclick = () => {
+                    toggleFavorite(command, originalItem, originalItem.querySelector('.btn-favorite'));
+                    // Also update the clone's button
+                    favBtn.innerHTML = favorites.includes(command) ? '★' : '☆';
+                    if (!favorites.includes(command)) {
+                        clone.remove();
+                    }
+                };
+                favoritesGrid.appendChild(clone);
+            }
+        });
+    }
+
+    // Tab navigation
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Update active tab
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            const target = this.getAttribute('data-target');
+            
+            // Clear search when switching tabs
+            searchInput.value = '';
+
+            // Handle favorites tab
+            if (target === 'favorites') {
+                favoritesSection.classList.remove('hidden');
+                categories.forEach(cat => cat.classList.add('hidden'));
+                updateFavoritesView();
+            } else {
+                favoritesSection.classList.add('hidden');
+                
+                // Show/hide categories based on tab
+                categories.forEach(category => {
+                    if (target === 'all') {
+                        category.classList.remove('hidden');
+                        category.querySelectorAll('.command-item').forEach(item => {
+                            item.classList.remove('hidden');
+                        });
+                    } else {
+                        const categoryType = category.getAttribute('data-category');
+                        if (categoryType === target) {
+                            category.classList.remove('hidden');
+                            category.querySelectorAll('.command-item').forEach(item => {
+                                item.classList.remove('hidden');
+                            });
+                        } else {
+                            category.classList.add('hidden');
+                        }
+                    }
+                });
+            }
+
+            // Scroll to top of content
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+
+    // Search functionality
+    searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        
+        // Hide favorites section when searching
+        favoritesSection.classList.add('hidden');
+        
+        // If searching, show all categories first
+        if (searchTerm) {
+            // Reset to "All Commands" tab when searching
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabButtons[0].classList.add('active');
+        }
+
+        categories.forEach(category => {
+            let hasVisibleCommands = false;
+            const items = category.querySelectorAll('.command-item');
+            
+            items.forEach(item => {
+                const code = item.querySelector('.command-code').textContent.toLowerCase();
+                const description = item.querySelector('.command-description').textContent.toLowerCase();
+                
+                if (code.includes(searchTerm) || description.includes(searchTerm)) {
+                    item.classList.remove('hidden');
+                    hasVisibleCommands = true;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+            
+            if (hasVisibleCommands || searchTerm === '') {
+                category.classList.remove('hidden');
+            } else {
+                category.classList.add('hidden');
+            }
+        });
+    });
+
+    // Initialize on page load
+    initializeCommands();
+</script>
+```
+
+</body>
+</html>
