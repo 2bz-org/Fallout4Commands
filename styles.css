@@ -41,8 +41,11 @@ header {
     gap: 12px;
 }
 
-.logo-icon {
-    font-size: 2em;
+.logo-image {
+    width: auto;
+    height: 48px;
+    object-fit: contain;
+    display: block;
 }
 
 h1 {
@@ -389,8 +392,8 @@ footer p {
         font-size: 1.4em;
     }
 
-    .logo-icon {
-        font-size: 1.6em;
+    .logo-image {
+        height: 40px;
     }
 
     .header-content {
@@ -468,8 +471,8 @@ footer p {
         font-size: 1.2em;
     }
 
-    .logo-icon {
-        font-size: 1.4em;
+    .logo-image {
+        height: 34px;
     }
 
     .platform-tag {
